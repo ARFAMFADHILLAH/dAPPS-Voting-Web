@@ -1,0 +1,24 @@
+Dapetin dulu api key dari pinata biar bisa di run
+butuh api_key dan secret_api_key
+
+btw private key nya itu gw sengaja share karna jaringan nya localhost dan paai hardhat jadi harus sesuai sama hardhat
+jalanin di terminal harus terpisah!
+
+awal awal jalanin dulu folder DAPPS VOTING WEB
+cd "D:\dAPPS Voting Web"
+cd "D:\dAPPS Voting Web\backend"
+
+yang pertama running:
+npx hardhat node
+
+lalu ke 2 running:
+npx hardhat run scripts/deploy_nft.js --network localhost
+npx hardhat run scripts/deploy_voting.js --network localhost
+
+lalu ke running:
+node main.js
+
+npx hardhat run backend/scripts/deploy_nft.js --network localhost
+npx hardhat run backend/scripts/deploy_voting.js --network localhost
+
+node backend/main.js
